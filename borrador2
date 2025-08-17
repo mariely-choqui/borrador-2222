@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Castelar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .navbar {
+      background-color: #0d1b2a;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      gap: 15px;
+    }
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .header-content h1 {
+      color: #f8c332;
+      margin: 0;
+    }
+    .header-content p {
+      margin: 0;
+      color: white;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: scale(0.95);
+      animation: fadeInZoom 1s ease-in-out forwards;
+    }
+    @keyframes fadeInZoom {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
+    .delay-5 { animation-delay: 1s; }
+    .delay-6 { animation-delay: 1.2s; }
+    .delay-7 { animation-delay: 1.4s; }
+    .delay-8 { animation-delay: 1.6s; }
+    .delay-9 { animation-delay: 1.8s; }
+    header {
+      background-color: #0e1b2e;
+      color: #f9c55c;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #ddd;
+    }
+    .banner-img {
+      max-width: 250px;
+      margin-top: 20px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #0e1b2e;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: calc(33.33% - 10px);
+      height: auto;
+      border-radius: 6px;
+    }
+    .testimonios, .logos, .contacto {
+      margin-top: 40px;
+    }
+    .logos img {
+      width: 80px;
+      margin: 10px;
+      vertical-align: middle;
+    }
+    .whatsapp {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #25d366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9em;
+      background-color: #1d3557;
+      color: white;
+      box-sizing: border-box;
+      margin-top: 40px;
+    }
+    .highlight-box {
+      background-color: #f2f2f2;
+      border-left: 4px solid #2b7a78;
+      padding: 15px;
+      margin: 20px auto;
+      max-width: 800px;
+      font-size: 18px;
+      line-height: 1.5;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .menu {
+      display: none;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .menu a {
+      display: block;
+      color: #1d3557;
+      text-decoration: none;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .menu a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="header-content">
+      <h1>Service Castelar</h1>
+      <p>Instalación y reparación de aires acondicionados · Heladeras familiares y comerciales · Lavarropas automáticos</p>
+      <img src="banner-aire.jpg" alt="Aire acondicionado" class="banner-img" />
+      <br>
+      <a href="https://wa.me/541169598282" class="whatsapp">Contactar por WhatsApp</a>
+    </div>
+  </header> 
+  <section id="quienes-somos" class="section">
+    <h2>Quiénes somos</h2>
+    <p style="max-width: 800px; margin: 0 auto; font-size: 18px;">
+      En <strong>Service Castelar</strong> nos especializamos en brindar soluciones técnicas con responsabilidad y compromiso. Ofrecemos reparación de lavarropas automáticos de todas las marcas, instalación y reparación de aires acondicionados split, reparación de heladeras familiares y comerciales, y servicio técnico especializado en refrigeración comercial. Contamos con más de <strong>25 años de experiencia</strong> brindando servicios de calidad a clientes de <strong>Zona Oeste y Gran Buenos Aires</strong>.
+    </p>
+  </section>
+  <section class="section servicios" id="servicios">
+    <h2>Servicios</h2>
+    <p class="intro">En <strong>Service Castelar</strong> brindamos soluciones técnicas confiables, adaptadas a cada necesidad.</p>
+    <div class="servicio">
+      <h3>Aires acondicionados</h3>
+      <ul>
+        <li>Instalación y reparaciones de equipos split</li>
+        <li>Carga de refrigerante</li>
+        <li>Mantenimiento en general</li>
+        <li>Reparación de fuentes de alimentación</li>
+      </ul>
+    </div>
+    <div class="servicio">
+      <h3>Heladeras familiares y comerciales</h3>
+      <ul>
+        <li>Reparación de motocompresor</li>
+        <li>Soluciones de fugas</li>
+        <li>Servicio técnico de componentes electrónicos</li>
+        <li>Mantenimiento de heladeras comerciales</li>
+      </ul>
+    </div>
+    <div class="servicio">
+      <h3>Lavarropas automáticos</h3>
+      <ul>
+        <li>Reparación de placa electrónica o nuevas del mismo</li>
+        <li>Reemplazo de bomba, válvula o presostato</li>
+        <li>Cambio de rodamientos</li>
+      </ul>
+    </div>
+  </section>
+  <div class="highlight-box fade-in">
+    Soluciones rápidas y efectivas para que tus equipos vuelvan a funcionar como el primer día.
+  </div>
+  <h2 class="fade-in">Trabajos realizados</h2>
+  <div class="gallery">
+    <img class="fade-in delay-1" src="2-aires.jpg" alt="Trabajo 1" />
+    <img class="fade-in delay-2" src="aire-luz.jpg" alt="Trabajo 3" />
+    <img class="fade-in delay-3" src="aire-ventana.jpg" alt="Trabajo 4" />
+    <img class="fade-in delay-4" src="aire-ventana-abierta.jpg" alt="Trabajo 5" />
+    <img class="fade-in delay-5" src="aire-ventana-pequeña.jpg" alt="Trabajo 6" />
+    <img class="fade-in delay-6" src="escalera.jpg" alt="Trabajo 9" />
+  </div>
+  <div class="testimonios" style="padding: 50px 20px; text-align: center;">
+    <h2 style="font-size: 24px; color: #1a1a1a; margin-bottom: 30px;">❝ Lo que opinan nuestros clientes</h2>
+    <p class="fade-in delay-7" style="font-style: italic; font-size: 18px;">
+      “Excelente servicio, muy recomendados.”<br><strong>– Marcela, Bella Vista</strong>
+    </p>
+    <p class="fade-in delay-8" style="font-style: italic; font-size: 18px;">
+      “Recomiendo totalmente, muy buena atención.”<br><strong>– Cristian, San Miguel</strong>
+    </p>
+    <p class="fade-in delay-9" style="font-style: italic; font-size: 18px;">
+      “Confiables y puntuales. Ya los llamé más de una vez.”<br><strong>– Lorena, José C. Paz</strong>
+    </p>
+  </div>
+  <section class="section" style="background-color: #f0f4f9; padding: 35px 20px; text-align: center; border-radius: 10px; margin: 40px 0;">
+    <h3 style="font-size: 26px; color: #1a1a1a; margin-bottom: 12px;">Atendemos todas las marcas</h3>
+    <p style="font-size: 20px; color: #2e2e2e; max-width: 800px; margin: 0 auto;">
+      No importa el modelo: ofrecemos soluciones técnicas <strong>precisas y confiables</strong>, con el respaldo de <strong>más de 25 años de experiencia</strong>.
+    </p>
+  </section>
+  <div class="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/541169598282">1169598282</a></p>
+    <p><strong>Email:</strong> acostacarlosandres919@gmail.com</p>
+    <p><strong>Zona de trabajo:</strong> Gran Buenos Aires</p>
+    <p><strong>Horario:</strong> Lunes a Sábado de 08:00 a 18:00 hs</p>
+  </div>
+  <footer>
+    © 2025 Service Castelar
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+  </script>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
